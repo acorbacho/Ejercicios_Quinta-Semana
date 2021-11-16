@@ -5,12 +5,12 @@
  */
 function comprobador(valor_inicial, valor_comprobar) {
     /**
-     * Almacena el parámetro "valor_inicial"
+     * Almacena el parámetro "valor_inicial".
      * @type {number}
      */
     var valor_aleatorio = valor_inicial
     /**
-     * Almacena el parámetro "valor_comprobar"
+     * Almacena el parámetro "valor_comprobar".
      * @type {number}
      */
     var valor_introducido = valor_comprobar

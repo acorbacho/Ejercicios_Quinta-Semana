@@ -3,7 +3,7 @@
  */
 function obras_de_arte() {
     /**
-     * Función padre.
+     * Función objeto padre.
      */
     var Arte = function () {
         Arte.prototype.nombre = ""

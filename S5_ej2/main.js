@@ -21,7 +21,7 @@ function main() {
          */
         var numero_aleatorio = random()
         /**
-         * Contador de intentos
+         * Contador de intentos.
          * @type {number}
          */
         var contador = 5
