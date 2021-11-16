@@ -2,7 +2,6 @@
  * Función principal del programa de creación de perfiles.
  * Se recogen datos de usuario y se ejecutan otras funciones.
  */
-
 function main() {
     /**
      * Nombre.

@@ -2,7 +2,6 @@
  * Engloba todas las funciones del programa. Recibe los billetes, comprueba que sea una cantidad adecuada retorna los billetes de cada tipo.
  * También comprueba que el usuario quiera salir del programa.
  */
-
 function main() {
     /**
      * Cantidad de billetes.

@@ -53,27 +53,27 @@ function menu(objeto_perfil) {
             perfil.telefono = nuevo_telefono
             perfil.email = nuevo_email
             /**
-             * Guarda una referencia "id" a "nombre" procendente del documento html.
+             * Guarda una referencia "id" a "nombre" procendente del documento HTML.
              * @type {string}
              */
             var id_nombre = document.getElementById("nombre")
             /**
-             * Guarda una referencia "id" a "apellidos" procendente del documento html.
+             * Guarda una referencia "id" a "apellidos" procendente del documento HTML.
              * @type {string}
              */
             var id_apellidos = document.getElementById("apellidos")
             /**
-             * Guarda una referencia "id" a "direccion" procendente del documento html.
+             * Guarda una referencia "id" a "direccion" procendente del documento HTML.
              * @type {string}
              */
             var id_direccion = document.getElementById("direccion")
             /**
-             * Guarda una referencia "id" a "telefono" procendente del documento html.
+             * Guarda una referencia "id" a "telefono" procendente del documento HTML.
              * @type {string}
              */
             var id_telefono = document.getElementById("telefono")
             /**
-             * Guarda una referencia "id" a "email" procendente del documento html.
+             * Guarda una referencia "id" a "email" procendente del documento HTML.
              * @type {string}
              */
             var id_email = document.getElementById("email")
