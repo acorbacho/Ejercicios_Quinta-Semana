@@ -1,18 +1,34 @@
-/*Crea un programa que genere un número al azar (entre el 1 y el 100) y el
-usuario debe de intentar acertar el número que se generó, con 5 intentos
-como mucho. El programa debe avisar al usuario si es menor o mayor que el
-que introdujo. Debe de preguntar al usuario al terminar, tanto si gana como
-si pierde, si quiere volver a jugar.*/
+/**
+ * Función principal del programa que compara u número introducido por el usuario con otro generado aleatoriamente. Aquí se implementa un limitador de 5 intentos de comprobación.
+ * También se le da la opción al usuario de repetir o parar el juego.
+ */
 
 function main() {
+    /**
+     * Variable que comprueba si el usuario quiere continuar con el programa.
+     * @type {string}
+     */
     var continuar = "si"
     while (continuar === "si") {
+        /**
+         * Almacena la entrada del usuario.
+         * @type {*}
+         */
         var numero_usuario
+        /**
+         * Almacena un número aleatorio.
+         * @type {number}
+         */
         var numero_aleatorio = random()
+        /**
+         * Contador de intentos
+         * @type {number}
+         */
         var contador = 5
         while (numero_usuario != numero_aleatorio && contador != 0) {
             contador--
-            var numero_usuario = entrada("Introduce un número e intenta adivinarlo.")
+            numero_usuario = entrada("Introduce un número e intenta adivinarlo.")
+            parseInt(numero_usuario)
             comprobador(numero_aleatorio, numero_usuario)
             if (numero_usuario != numero_aleatorio && contador === 0) {
                 salida("Se te acabaron los intentos. Has perdido. El valor era " + numero_aleatorio + ".")
@@ -20,8 +36,8 @@ function main() {
                 salida("Te quedan " + contador + " intentos.")
             }
         }
-        var continuar = "no"
-        var continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
+        continuar = "no"
+        continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
     }
 }
 

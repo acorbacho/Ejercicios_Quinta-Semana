@@ -1,12 +1,21 @@
+/**
+ * Función que engloba diversas funciones objeto.
+ */
 function obras_de_arte() {
+    /**
+     * Función padre.
+     */
     var Arte = function () {
         Arte.prototype.nombre = ""
     }
-
     Arte.prototype.alabarObra = function () {
         salida(this.nombre + " es impresionante")
     }
-
+    /**
+     * Función objeto de cine.
+     * @param {string} duracion - Duración del film.
+     * @param {number} genero - Género artístico.
+     */
     var Cine = function (duracion, genero) {
         this.duracion = duracion
         this.genero = genero
@@ -19,7 +28,11 @@ function obras_de_arte() {
     for (id in Arte.prototype) {
         Cine.prototype[id] = Arte.prototype[id]
     }
-
+    /**
+     * Función objeto de esculturas.
+     * @param {string} material - Material de la escultura.
+     * @param {number} epoca - Año de creación.
+     */
     var Esculturas = function (material, epoca) {
         this.material = material
         this.epoca = epoca
@@ -31,7 +44,11 @@ function obras_de_arte() {
     for (id in Arte.prototype) {
         Esculturas.prototype[id] = Arte.prototype[id]
     }
-
+    /**
+     * Función objeto de pinturas.
+     * @param {string} autor - Autor de la pintura.
+     * @param {string} estilo - Estilo artístico.
+     */
     var Pintura = function (autor, estilo) {
         this.autor = autor
         this.estilo = estilo
@@ -43,7 +60,11 @@ function obras_de_arte() {
     for (id in Arte.prototype) {
         Pintura.prototype[id] = Arte.prototype[id]
     }
-
+    /**
+     * Función objeto de teatro.
+     * @param {*} duracion - Duración de la obra.
+     * @param {*} epoca - Año de la creación.
+     */
     var Teatro = function (duracion, epoca) {
         this.duracion = duracion
         this.epoca = epoca
@@ -55,10 +76,25 @@ function obras_de_arte() {
     for (id in Arte.prototype) {
         Teatro.prototype[id] = Arte.prototype[id]
     }
-
+    /**
+     * Variable que almacena un objeto nuevo creado con "Cine".
+     * @type {object}
+     */
     var cine = new Cine("1h 43m", "terror")
+    /**
+     * Variable que almacena un objeto nuevo creado con "Esculturas".
+     * @type {object}
+     */
     var esculturas = new Esculturas("Piedra caliza", "Siglo XVI")
+    /**
+     * Variable que almacena un objeto nuevo creado con "Pintura".
+     * @type {object}
+     */
     var pintura = new Pintura("Velazquez", "Pintura histórica")
+    /**
+     * Variable que almacena un objeto nuevo creado con "Teatro".
+     * @type {object}
+     */
     var teatro = new Teatro("2h 15m", 1920)
     cine.nombre = "Saw"
     esculturas.nombre = "Miguel Angelo"

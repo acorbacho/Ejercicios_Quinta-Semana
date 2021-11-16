@@ -1,17 +1,38 @@
-/*Se requiere programar un perfil de usuario simple. El programa en su primera
-ejecución deberá pedir los datos al usuario: nombre, apellidos, dirección,
-teléfono, email… Una vez indicados, deberá desplegar un menú con
-opciones para ver todos los datos y la capacidad de modificar individualmente cualquier dato. 
-El perfil del usuario debe de ser un objeto llamado Perfil.*/
-/*Utilizando el ejercicio 3, crea una etiqueta <h1> en html con cada atributo
-del perfil y actualizalas cada vez que se modifique uno de los atributos.*/
+/**
+ * Función principal del programa de creación de perfiles.
+ * Se recogen datos de usuario y se ejecutan otras funciones.
+ */
 
 function main() {
+    /**
+     * Nombre.
+     * @type {string}
+     */
     var nombre = entrada("Introduce tu nombre.")
+    /**
+     * Apellidos.
+     * @type {string}
+     */
     var apellidos = entrada("Introduce tus apellidos.")
+    /**
+     * Dirección.
+     * @type {string}
+     */
     var direccion = entrada("Introduce tu direccion.")
+    /**
+     * Teléfono.
+     * @type {string}
+     */
     var telefono = entrada("Introduce tu número de teléfono.")
+    /**
+     * Email.
+     * @type {string}
+     */
     var email = entrada("Introduce tu correo electrónico.")
+    /**
+     * Almacena el perfil de usuario.
+     * @type {object}
+     */
     var perfil_creado = perfil_usuario(nombre, apellidos, direccion, telefono, email)
     menu(perfil_creado)
 }
