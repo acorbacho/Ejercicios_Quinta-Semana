@@ -6,10 +6,10 @@ function obras_de_arte() {
      * Función objeto padre.
      */
     var Arte = function () {
-        Arte.prototype.nombre = ""
+        Arte.prototype.nombre = ''
     }
     Arte.prototype.alabarObra = function () {
-        salida(this.nombre + " es impresionante")
+        salida(this.nombre + ' es impresionante')
     }
     /**
      * Función objeto de cine.
@@ -20,7 +20,7 @@ function obras_de_arte() {
         this.duracion = duracion
         this.genero = genero
         this.attr_cine = function () {
-            salida(this.nombre + ", " + this.duracion + ", " + this.genero)
+            salida(this.nombre + ', ' + this.duracion + ', ' + this.genero)
         }
 
     }
@@ -37,7 +37,7 @@ function obras_de_arte() {
         this.material = material
         this.epoca = epoca
         this.attr_esculturas = function () {
-            salida(this.nombre + ", " + this.material + ", " + this.epoca)
+            salida(this.nombre + ', ' + this.material + ', ' + this.epoca)
         }
     }
 
@@ -53,7 +53,7 @@ function obras_de_arte() {
         this.autor = autor
         this.estilo = estilo
         this.attr_pintura = function () {
-            salida(this.nombre + ", " + this.autor + ", " + this.estilo)
+            salida(this.nombre + ', ' + this.autor + ', ' + this.estilo)
         }
     }
 
@@ -69,7 +69,7 @@ function obras_de_arte() {
         this.duracion = duracion
         this.epoca = epoca
         this.attr_teatro = function () {
-            salida(this.nombre + ", " + this.duracion + ", " + this.epoca)
+            salida(this.nombre + ', ' + this.duracion + ', ' + this.epoca)
         }
     }
 
@@ -77,29 +77,29 @@ function obras_de_arte() {
         Teatro.prototype[id] = Arte.prototype[id]
     }
     /**
-     * Variable que almacena un objeto nuevo creado con "Cine".
+     * Variable que almacena un objeto nuevo creado con 'Cine'.
      * @type {object}
      */
-    var cine = new Cine("1h 43m", "terror")
+    var cine = new Cine('1h 43m', 'terror')
     /**
-     * Variable que almacena un objeto nuevo creado con "Esculturas".
+     * Variable que almacena un objeto nuevo creado con 'Esculturas'.
      * @type {object}
      */
-    var esculturas = new Esculturas("Piedra caliza", "Siglo XVI")
+    var esculturas = new Esculturas('Piedra caliza', 'Siglo XVI')
     /**
-     * Variable que almacena un objeto nuevo creado con "Pintura".
+     * Variable que almacena un objeto nuevo creado con 'Pintura'.
      * @type {object}
      */
-    var pintura = new Pintura("Velazquez", "Pintura histórica")
+    var pintura = new Pintura('Velazquez', 'Pintura histórica')
     /**
-     * Variable que almacena un objeto nuevo creado con "Teatro".
+     * Variable que almacena un objeto nuevo creado con 'Teatro'.
      * @type {object}
      */
-    var teatro = new Teatro("2h 15m", 1920)
-    cine.nombre = "Saw"
-    esculturas.nombre = "Miguel Angelo"
-    pintura.nombre = "Las Meninas"
-    teatro.nombre = "Luces de bohemia"
+    var teatro = new Teatro('2h 15m', 1920)
+    cine.nombre = 'Saw'
+    esculturas.nombre = 'Miguel Angelo'
+    pintura.nombre = 'Las Meninas'
+    teatro.nombre = 'Luces de bohemia'
     cine.alabarObra()
     cine.attr_cine()
     esculturas.attr_esculturas()

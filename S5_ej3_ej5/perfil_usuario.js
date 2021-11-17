@@ -34,7 +34,7 @@ function perfil_usuario(nombre_introducido, apellidos_introducido, direccion_int
      */
     var email_usuario = email_introducido
     /**
-     * Función de creación de objeto "Perfil".
+     * Función de creación de objeto 'Perfil'.
      * @param {string} nombre - Nombre
      * @param {string} apellidos - Apellidos
      * @param {string} direccion - Dirección
@@ -55,30 +55,30 @@ function perfil_usuario(nombre_introducido, apellidos_introducido, direccion_int
      */
     var perfil = new Perfil(nombre_usuario, apellidos_usuario, direccion_usuario, telefono_usuario, email_usuario)
     /**
-     * Guarda una referencia "id" a "nombre" procendente del documento html.
+     * Guarda una referencia 'id' a 'nombre' procendente del documento html.
      * @type {string}
      */
-    var id_nombre = document.getElementById("nombre")
+    var id_nombre = document.getElementById('nombre')
     /**
-     * Guarda una referencia "id" a "apellidos" procendente del documento html.
+     * Guarda una referencia 'id' a 'apellidos' procendente del documento html.
      * @type {string}
      */
-    var id_apellidos = document.getElementById("apellidos")
+    var id_apellidos = document.getElementById('apellidos')
     /**
-     * Guarda una referencia "id" a "direccion" procendente del documento html.
+     * Guarda una referencia 'id' a 'direccion' procendente del documento html.
      * @type {string}
      */
-    var id_direccion = document.getElementById("direccion")
+    var id_direccion = document.getElementById('direccion')
     /**
-     * Guarda una referencia "id" a "telefono" procendente del documento html.
+     * Guarda una referencia 'id' a 'telefono' procendente del documento html.
      * @type {string}
      */
-    var id_telefono = document.getElementById("telefono")
+    var id_telefono = document.getElementById('telefono')
     /**
-     * Guarda una referencia "id" a "email" procendente del documento html.
+     * Guarda una referencia 'id' a 'email' procendente del documento html.
      * @type {string}
      */
-    var id_email = document.getElementById("email")
+    var id_email = document.getElementById('email')
 
     id_nombre.innerHTML = nombre_usuario
     id_apellidos.innerHTML = apellidos_usuario

@@ -67,8 +67,8 @@ function cajero(cantidad_dinero) {
         billetes5 = Math.trunc(cantidad / 5)
         cantidad = cantidad - (5 * billetes5)
     }
-    return billetes200 + " billetes de 200 retirados.\n" + billetes100 +
-        " billetes de 100 retirados.\n" + billetes50 + " billetes de 50 retirados.\n"
-        + billetes20 + " billetes de 20 retirados.\n" + billetes10 + " billetes de 10 retirados.\n"
-        + billetes5 + " billetes de 5 retirados."
+    return billetes200 + ' billetes de 200 retirados.\n' + billetes100 +
+        ' billetes de 100 retirados.\n' + billetes50 + ' billetes de 50 retirados.\n'
+        + billetes20 + ' billetes de 20 retirados.\n' + billetes10 + ' billetes de 10 retirados.\n'
+        + billetes5 + ' billetes de 5 retirados.'
 }

@@ -7,27 +7,27 @@ function main() {
      * Nombre.
      * @type {string}
      */
-    var nombre = entrada("Introduce tu nombre.")
+    var nombre = entrada('Introduce tu nombre.')
     /**
      * Apellidos.
      * @type {string}
      */
-    var apellidos = entrada("Introduce tus apellidos.")
+    var apellidos = entrada('Introduce tus apellidos.')
     /**
      * Dirección.
      * @type {string}
      */
-    var direccion = entrada("Introduce tu direccion.")
+    var direccion = entrada('Introduce tu direccion.')
     /**
      * Teléfono.
      * @type {string}
      */
-    var telefono = entrada("Introduce tu número de teléfono.")
+    var telefono = entrada('Introduce tu número de teléfono.')
     /**
      * Email.
      * @type {string}
      */
-    var email = entrada("Introduce tu correo electrónico.")
+    var email = entrada('Introduce tu correo electrónico.')
     /**
      * Almacena el perfil de usuario.
      * @type {object}

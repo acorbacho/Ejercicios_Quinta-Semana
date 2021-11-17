@@ -7,8 +7,8 @@ function main() {
      * Variable que comprueba si el usuario quiere continuar con el programa.
      * @type {string}
      */
-    var continuar = "si"
-    while (continuar === "si") {
+    var continuar = 'si'
+    while (continuar === 'si') {
         /**
          * Almacena la entrada del usuario.
          * @type {*}
@@ -26,16 +26,16 @@ function main() {
         var contador = 5
         while (numero_usuario != numero_aleatorio && contador != 0) {
             contador--
-            numero_usuario = entrada("Introduce un número e intenta adivinarlo.")
+            numero_usuario = entrada('Introduce un número e intenta adivinarlo.')
             parseInt(numero_usuario)
             comprobador(numero_aleatorio, numero_usuario)
             if (numero_usuario != numero_aleatorio && contador === 0) {
-                salida("Se te acabaron los intentos. Has perdido. El valor era " + numero_aleatorio + ".")
+                salida('Se te acabaron los intentos. Has perdido. El valor era ' + numero_aleatorio + '.')
             } else if (numero_usuario != numero_aleatorio && contador > 0) {
-                salida("Te quedan " + contador + " intentos.")
+                salida('Te quedan ' + contador + ' intentos.')
             }
         }
-        continuar = "no"
+        continuar = 'no'
         continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
     }
 }
