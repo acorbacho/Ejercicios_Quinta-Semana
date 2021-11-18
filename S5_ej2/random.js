@@ -1,7 +1,7 @@
 /**
- * Función que genera un número aleatorio entre 0 y 100.
+ * Función que genera un número aleatorio.
  * @returns {number} - Devuelve el número.
  */
-function random() {
-    return Math.round(Math.random() * 100)
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min
 }

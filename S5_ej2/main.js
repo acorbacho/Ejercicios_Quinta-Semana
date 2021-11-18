@@ -19,22 +19,7 @@ function main() {
          * @type {number}
          */
         var numero_aleatorio = random(0, 100)
-        /**
-         * Contador de intentos.
-         * @type {number}
-         */
-        var contador = 5
-        while (numero_usuario != numero_aleatorio && contador != 0) {
-            contador--
-            numero_usuario = entrada('Introduce un número e intenta adivinarlo.')
-            parseInt(numero_usuario)
-            comprobador(numero_aleatorio, numero_usuario)
-            if (numero_usuario != numero_aleatorio && contador === 0) {
-                salida('Se te acabaron los intentos. Has perdido. El valor era ' + numero_aleatorio + '.')
-            } else if (numero_usuario != numero_aleatorio && contador > 0) {
-                salida('Te quedan ' + contador + ' intentos.')
-            }
-        }
+        juego(numero_usuario, numero_aleatorio)
         continuar = 'no'
         continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
     }

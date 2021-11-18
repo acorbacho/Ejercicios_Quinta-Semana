@@ -1,7 +1,13 @@
 /**
- * Función que genera un número aleatorio.
- * @returns {number} - Devuelve el número.
+ * Función de entrada de datos genérica.
+ * @param {string} mensaje
+ * @returns {string} - Devuelve la entrada.
  */
-function random(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min
+function entrada(mensaje) {
+    /**
+     * Mensaje de entrada.
+     * @type {string}
+     */
+    var valor = prompt(mensaje)
+    return valor
 }
