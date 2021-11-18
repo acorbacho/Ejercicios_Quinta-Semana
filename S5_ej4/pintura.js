@@ -20,9 +20,11 @@ function pintura(nombre, autor, estilo) {
     var Arte = function () {
         Arte.prototype.nombre = ''
     }
+
     Arte.prototype.alabarObra = function () {
         salida(this.nombre + ' es impresionante')
     }
+
     /**
      * Función objeto de pinturas.
      * @param {string} autor - Autor de la pintura.
@@ -39,6 +41,7 @@ function pintura(nombre, autor, estilo) {
     for (id in Arte.prototype) {
         Pintura.prototype[id] = Arte.prototype[id]
     }
+
     /**
      * Almacena el objeto creado a partir de "Pintura".
      * @type {object}

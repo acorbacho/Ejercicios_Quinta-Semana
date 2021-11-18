@@ -20,9 +20,11 @@ function teatro(nombre, duracion, epoca) {
     var Arte = function () {
         Arte.prototype.nombre = ''
     }
+
     Arte.prototype.alabarObra = function () {
         salida(this.nombre + ' es impresionante')
     }
+
     /**
      * Función objeto de teatro.
      * @param {*} duracion - Duración de la obra.
@@ -39,6 +41,7 @@ function teatro(nombre, duracion, epoca) {
     for (id in Arte.prototype) {
         Teatro.prototype[id] = Arte.prototype[id]
     }
+
     /**
      * Almacena el objeto creado a partir de "Teatro".
      * @type {object}

@@ -20,9 +20,11 @@ function cine(nombre, duracion, genero) {
     var Arte = function () {
         Arte.prototype.nombre = ''
     }
+
     Arte.prototype.alabarObra = function () {
         salida(this.nombre + ' es impresionante')
     }
+
     /**
      * Función objeto de cine.
      * @param {string} duracion - Duración del film.
@@ -40,6 +42,7 @@ function cine(nombre, duracion, genero) {
     for (id in Arte.prototype) {
         Cine.prototype[id] = Arte.prototype[id]
     }
+
     /**
      * Almacena el objeto creado a partir de "Cine".
      * @type {object}

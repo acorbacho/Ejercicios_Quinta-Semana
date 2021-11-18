@@ -20,6 +20,7 @@ function esculturas(nombre, material, epoca) {
     var Arte = function () {
         Arte.prototype.nombre = ''
     }
+
     Arte.prototype.alabarObra = function () {
         salida(this.nombre + ' es impresionante')
     }
@@ -40,6 +41,7 @@ function esculturas(nombre, material, epoca) {
     for (id in Arte.prototype) {
         Esculturas.prototype[id] = Arte.prototype[id]
     }
+
     /**
      * Almacena el objeto creado a partir de "Esculturas".
      * @type {object}
