@@ -14,17 +14,15 @@ function comprobador(valor_inicial, valor_comprobar) {
      * @type {number}
      */
     var valor_introducido = valor_comprobar
+
     if (valor_aleatorio === valor_introducido) {
         salida('Has acertado.')
-    }
-    else if (isNaN(valor_introducido)) {
+    } else if (isNaN(valor_introducido)) {
         salida('No es un número')
-    }
-    else {
+    } else {
         if (valor_aleatorio > valor_introducido) {
             salida('Has fallado. El valor es mayor que ' + valor_introducido + '.')
-        }
-        else {
+        } else {
             salida('Has fallado. El valor es menor que ' + valor_introducido + '.')
         }
     }

@@ -42,15 +42,12 @@ function cine(nombre, duracion, genero) {
     for (id in Arte.prototype) {
         Cine.prototype[id] = Arte.prototype[id]
     }
-
     /**
      * Almacena el objeto creado a partir de "Cine".
      * @type {object}
      */
     var cine = new Cine(duracion_cine, genero_cine)
-
     cine.nombre = nombre_cine
-
     cine.alabarObra()
     cine.attr_cine()
 }

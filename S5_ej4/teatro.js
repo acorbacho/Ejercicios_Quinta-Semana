@@ -41,15 +41,12 @@ function teatro(nombre, duracion, epoca) {
     for (id in Arte.prototype) {
         Teatro.prototype[id] = Arte.prototype[id]
     }
-
     /**
      * Almacena el objeto creado a partir de "Teatro".
      * @type {object}
      */
     var teatro = new Teatro(duracion_teatro, epoca_teatro)
-
     teatro.nombre = nombre_teatro
-
     teatro.alabarObra()
     teatro.attr_teatro()
 }

@@ -79,12 +79,10 @@ function perfil_usuario(nombre_introducido, apellidos_introducido, direccion_int
      * @type {string}
      */
     var id_email = document.getElementById('email')
-
     id_nombre.innerHTML = nombre_usuario
     id_apellidos.innerHTML = apellidos_usuario
     id_direccion.innerHTML = direccion_usuario
     id_telefono.innerHTML = telefono_usuario
     id_email.innerHTML = email_usuario
-
     return perfil
 }

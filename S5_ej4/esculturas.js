@@ -41,15 +41,12 @@ function esculturas(nombre, material, epoca) {
     for (id in Arte.prototype) {
         Esculturas.prototype[id] = Arte.prototype[id]
     }
-
     /**
      * Almacena el objeto creado a partir de "Esculturas".
      * @type {object}
      */
     var esculturas = new Esculturas(material_escultura, epoca_escultura)
-
     esculturas.nombre = nombre_escultura
-
     esculturas.alabarObra()
     esculturas.attr_esculturas()
 }

@@ -8,6 +8,7 @@ function main() {
      * @type {string}
      */
     var continuar = 'si'
+
     while (continuar === 'si') {
         /**
          * Almacena la entrada del usuario.

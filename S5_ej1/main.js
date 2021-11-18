@@ -8,6 +8,7 @@ function main() {
      * @type {*}
      */
     var cantidad_de_billetes
+
     while (cantidad_de_billetes !== 'salir') {
         cantidad_de_billetes = entrada("Introduce la cantadidad a retirar. Para salir, escriba 'salir'.")
         if (cantidad_de_billetes === 'salir') {

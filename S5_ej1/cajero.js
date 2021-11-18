@@ -15,34 +15,31 @@ function cajero(cantidad_dinero) {
      */
     var billetes200 = 0
     /**
-     * Cantidad de billetes de 200€.
+     * Cantidad de billetes de 100€.
      * @type {number}
      */
     var billetes100 = 0
     /**
-     * Cantidad de billetes de 100€.
+     * Cantidad de billetes de 50€.
      * @type {number}
      */
     var billetes50 = 0
     /**
-     * Cantidad de billetes de 50€.
+     * Cantidad de billetes de 20€.
      * @type {number}
      */
     var billetes20 = 0
     /**
-     * Cantidad de billetes de 20€.
+     * Cantidad de billetes de 10€.
      * @type {number}
      */
     var billetes10 = 0
     /**
-     * Cantidad de billetes de 10€.
-     * @type {number}
-     */
-    var billetes5 = 0
-    /**
      * Cantidad de billetes de 5€.
      * @type {number}
      */
+    var billetes5 = 0
+
     if (cantidad >= 200) {
         billetes200 = Math.trunc(cantidad / 200)
         cantidad = cantidad - (200 * billetes200)

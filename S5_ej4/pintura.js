@@ -41,15 +41,12 @@ function pintura(nombre, autor, estilo) {
     for (id in Arte.prototype) {
         Pintura.prototype[id] = Arte.prototype[id]
     }
-
     /**
      * Almacena el objeto creado a partir de "Pintura".
      * @type {object}
      */
     var pintura = new Pintura(autor_pintura, estilo_pintura)
-
     pintura.nombre = nombre_pintura
-
     pintura.alabarObra()
     pintura.attr_pintura()
 }

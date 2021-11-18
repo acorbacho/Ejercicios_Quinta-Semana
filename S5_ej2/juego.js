@@ -14,6 +14,7 @@ function juego(numero_usuario_param, numero_aleatorio_param) {
      * @type {number}
      */
     var contador = 5
+
     while (numero_usuario != numero_aleatorio && contador != 0) {
         contador--
         numero_usuario = entrada('Introduce un número e intenta adivinarlo.')
