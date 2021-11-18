@@ -35,5 +35,4 @@ function main() {
     var perfil_creado = perfil_usuario(nombre, apellidos, direccion, telefono, email)
     menu(perfil_creado)
 }
-
 main()

@@ -7,5 +7,4 @@ function main() {
     esculturas("Migel Ángel", "Escayola", "Renacimiento")
     pintura("Las Meninas", "Velazquez", "Pintura histórica")
 }
-
 main()

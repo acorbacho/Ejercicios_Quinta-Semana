@@ -25,5 +25,4 @@ function main() {
         continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
     }
 }
-
 main()
