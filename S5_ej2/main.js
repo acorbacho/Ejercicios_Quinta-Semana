@@ -18,7 +18,7 @@ function main() {
          * Almacena un número aleatorio.
          * @type {number}
          */
-        var numero_aleatorio = random()
+        var numero_aleatorio = random(0, 100)
         /**
          * Contador de intentos.
          * @type {number}
