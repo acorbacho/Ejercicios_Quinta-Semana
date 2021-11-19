@@ -14,7 +14,7 @@ function menu(objeto_perfil) {
      */
     var comando
 
-    while (comando !== 3) {
+    while (comando != 3) {
         comando = entrada('Selecciona lo que deseas hacer:\n 1-Ver tus datos de usuario\n 2-Modificar tus datos de usuario\n 3-Salir')
         parseInt(comando, 10)
         if (comando == 1) {
