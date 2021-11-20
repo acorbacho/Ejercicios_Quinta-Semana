@@ -44,22 +44,27 @@ function cajero(cantidad_dinero) {
         billetes200 = Math.trunc(cantidad / 200)
         cantidad = cantidad - (200 * billetes200)
     }
+
     if (cantidad >= 100) {
         billetes100 = Math.trunc(cantidad / 100)
         cantidad = cantidad - (100 * billetes100)
     }
+
     if (cantidad >= 50) {
         billetes50 = Math.trunc(cantidad / 50)
         cantidad = cantidad - (50 * billetes50)
     }
+
     if (cantidad >= 20) {
         billetes20 = Math.trunc(cantidad / 20)
         cantidad = cantidad - (20 * billetes20)
     }
+
     if (cantidad >= 10) {
         billetes10 = Math.trunc(cantidad / 10)
         cantidad = cantidad - (10 * billetes10)
     }
+
     if (cantidad >= 5) {
         billetes5 = Math.trunc(cantidad / 5)
         cantidad = cantidad - (5 * billetes5)

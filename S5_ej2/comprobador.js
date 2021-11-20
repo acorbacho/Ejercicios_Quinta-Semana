@@ -20,6 +20,7 @@ function comprobador(valor_inicial, valor_comprobar) {
     } else if (isNaN(valor_introducido)) {
         salida('No es un número')
     } else {
+
         if (valor_aleatorio > valor_introducido) {
             salida('Has fallado. El valor es mayor que ' + valor_introducido + '.')
         } else {

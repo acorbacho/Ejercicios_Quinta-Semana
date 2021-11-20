@@ -17,6 +17,7 @@ function menu(objeto_perfil) {
     while (comando != 3) {
         comando = entrada('Selecciona lo que deseas hacer:\n 1-Ver tus datos de usuario\n 2-Modificar tus datos de usuario\n 3-Salir')
         parseInt(comando, 10)
+
         if (comando == 1) {
             salida('Nombre: ' + perfil.nombre + '\nApellidos: ' + perfil.apellidos + '\nDirección: '
                 + perfil.direccion + '\nTeléfono: ' + perfil.telefono + '\nEmail: ' + perfil.email)

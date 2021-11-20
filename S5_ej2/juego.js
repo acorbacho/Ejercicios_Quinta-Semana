@@ -20,6 +20,7 @@ function juego(numero_usuario_param, numero_aleatorio_param) {
         numero_usuario = entrada('Introduce un número e intenta adivinarlo.')
         parseInt(numero_usuario)
         comprobador(numero_aleatorio, numero_usuario)
+
         if (numero_usuario != numero_aleatorio && contador === 0) {
             salida('Se te acabaron los intentos. Has perdido. El valor era ' + numero_aleatorio + '.')
         } else if (numero_usuario != numero_aleatorio && contador > 0) {
