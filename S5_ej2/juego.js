@@ -1,9 +1,9 @@
-function juego(numero_usuario_param, numero_aleatorio_param) {
+function juego(numero_aleatorio_param) {
     /**
      * Almacena el número de usuario.
      * @type {number}
      */
-    var numero_usuario = numero_usuario_param
+    var numero_usuario
     /**
      * Almacena el número de aleatorio.
      * @type {number}

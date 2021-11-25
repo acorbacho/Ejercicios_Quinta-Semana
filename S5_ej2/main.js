@@ -11,16 +11,11 @@ function main() {
 
     while (continuar === 'si') {
         /**
-         * Almacena la entrada del usuario.
-         * @type {*}
-         */
-        var numero_usuario
-        /**
          * Almacena un número aleatorio.
          * @type {number}
          */
         var numero_aleatorio = random(0, 100)
-        juego(numero_usuario, numero_aleatorio)
+        juego(numero_aleatorio)
         continuar = 'no'
         continuar = entrada("¿Deseas volver a jugar? Escribe 'si' para continuar, escribe otra cosa para salir.")
     }
